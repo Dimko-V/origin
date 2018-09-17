@@ -1,0 +1,76 @@
+/* * {
+    border: 1px solid silver;
+    margin: 10px;
+} */
+
+/* body {
+    border: 0;
+    margin: 0;
+} */
+
+wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    height: 90vh;
+}
+
+header, main, section, aside, footer, nav, .head {
+    border: 1px solid silver;
+    margin: 10px;
+}
+
+ /* Голова */
+header { 
+    display: flex column;
+
+    min-height: 50px;
+    flex-grow: 1;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+.head {
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    align-self: stretch;
+    /* flex-grow: 2; */
+}
+img {
+    flex-grow: 1;
+}
+.caption {
+    /* border: 1px solid silver; */
+    text-align: stretch;
+    align-items: stretch;
+    align-self: center;
+    flex-grow: 2;
+    color: #0079C7;
+}
+
+nav {
+    /* flex-shrink: 1; */
+    /* align-self: stretch; */
+    /* flex-grow: 1; */
+}
+
+/* Тело */
+main {   
+    display: flex;
+    min-height: 50px;
+    flex-grow: 4;
+}
+section {
+    flex-grow: 6;
+}
+aside {
+    flex-grow: 2;
+}
+
+/* Подвал */
+footer {  
+    min-height: 50px;
+
+    flex-grow: 1;
+}
