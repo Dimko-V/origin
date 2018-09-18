@@ -3,29 +3,35 @@
     margin: 10px;
 } */
 
-/* body {
-    border: 0;
-    margin: 0;
-} */
+body {
+    min-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 wrapper {
     display: flex;
     flex-direction: column;
-    align-items: stretch;
+    /* align-items: stretch; */
     height: 90vh;
-}
 
-main, section, aside, footer, nav {
+}
+.main, section, aside, footer, nav { /* Временно  */
     border: 1px solid silver;
     margin: 10px;
+}
+header, main.main, footer {
+    min-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
  /* Голова */
 header { 
     display: flex column;
 
-    min-height: 50px;
-    flex-grow: 1;
+    /* min-height: 50px; */
+    flex-grow: 0;
     justify-content: space-between;
     align-items: center;
     text-align: center;
@@ -57,7 +63,6 @@ nav {
 ul {
     display: flex;
     list-style-type: none;
-    align-items: center;
     justify-content: center;
 
 }
@@ -67,21 +72,24 @@ li {
 }
 
 /* Тело */
-main {   
+.main {   
     display: flex;
-    min-height: 50px;
-    flex-grow: 4;
+    /* flex-direction: row; */
+    justify-content: center;
+        /* align-items: center; */
+
+    flex-grow: 1;
 }
 section {
-    flex-grow: 6;
+    flex-grow: 3;
 }
 aside {
-    flex-grow: 2;
+    flex-grow: 1;
 }
 
 /* Подвал */
 footer {  
     min-height: 50px;
 
-    flex-grow: 1;
+    flex-grow: 0;
 }
