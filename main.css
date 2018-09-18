@@ -15,7 +15,7 @@ wrapper {
     height: 90vh;
 }
 
-header, main, section, aside, footer, nav, .head {
+main, section, aside, footer, nav {
     border: 1px solid silver;
     margin: 10px;
 }
@@ -32,27 +32,38 @@ header {
 }
 .head {
     display: flex;
-    text-align: center;
+    /* text-align: center; */
     justify-content: space-around;
-    align-self: stretch;
+    /* align-self: stretch; */
     /* flex-grow: 2; */
 }
 img {
-    flex-grow: 1;
+    border: 1px solid silver;
+
+    flex-grow: 0;
 }
 .caption {
     /* border: 1px solid silver; */
-    text-align: stretch;
-    align-items: stretch;
+    /* text-align: stretch; */
+    /* align-items: stretch; */
     align-self: center;
-    flex-grow: 2;
+    flex-grow: 1;
     color: #0079C7;
 }
 
 nav {
-    flex-shrink: 1;
-    align-self: stretch;
-    flex-grow: 1;
+    /* display: flex; */
+}
+ul {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    justify-content: center;
+
+}
+li {
+    align-self: center;
+    margin: 10px;
 }
 
 /* Тело */
